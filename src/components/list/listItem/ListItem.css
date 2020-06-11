@@ -1,0 +1,11 @@
+.listItem {
+    background-color: #ededed;
+    background: #ededed;
+    color: #282d34;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    text-align: left;
+    text-transform: capitalize;
+}

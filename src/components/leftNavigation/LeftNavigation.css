@@ -1,0 +1,19 @@
+.leftNavigation {
+  background: #fbfbfb;
+  bottom: 0;
+  font-size: 20px;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  width: 200px;
+}
+
+.leftNavigation__link {
+  color: #61dafb;
+  padding: 10px;
+}
+
+.leftNavigation__link--selected {
+  background: #ededed;
+}
