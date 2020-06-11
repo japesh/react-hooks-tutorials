@@ -3,6 +3,7 @@ import LeftNavigation from "./components/leftNavigation";
 import Exercise1 from "./exercise1";
 import Exercise2 from "./exercise2";
 import Exercise3 from "./exercise3";
+import Exercise4 from "./exercise4";
 import "./App.css";
 
 const LINKS = [
@@ -17,6 +18,10 @@ const LINKS = [
   {
     title: "Exercise 3",
     Component: Exercise3,
+  },
+  {
+    title: "Exercise 4",
+    Component: Exercise4,
   },
 ];
 

@@ -3,7 +3,7 @@ import AddTodo from "../components/addTodo/AddTodo";
 import List from "../components/list/List";
 import { useList } from "../hooks/list";
 
-export default function Exercise1() {
+export default function Exercise3() {
   const [list, { onAdd, onDelete }] = useList();
 
   return (
