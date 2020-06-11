@@ -14,8 +14,8 @@ function Link({ onSelect, children, index, className }) {
   );
 }
 
-export default function LeftNavigation({ links = [] }) {
-  const [selected, setSelectedLink] = useState(0);
+export default function LeftNavigation({ links = [], defaultSelected=0 }) {
+  const [selected, setSelectedLink] = useState(defaultSelected);
   const Component = links[selected].Component;
   return (
     <>

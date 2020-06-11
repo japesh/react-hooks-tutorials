@@ -6,19 +6,26 @@ const blockName = "listItem";
 export default function ListItem({
   onChange,
   children,
-  isDone = false,
   index,
+  onDelete,
+  isDone = false,
 }) {
   const _onChange = useCallback(
     (e) => {
-      console.log("index", index, e.target.checked);
       onChange({ isDone: e.target.checked, index });
     },
     [index, onChange]
   );
+  const _onDelete = useCallback(() => {
+    onDelete({ index });
+  }, [index, onDelete]);
   return (
     <div className={blockName}>
-      {children} <input type="checkbox" checked={isDone} onChange={_onChange} />
+      {children}{" "}
+      {onChange && (
+        <input type="checkbox" checked={isDone} onChange={_onChange} />
+      )}
+      {onDelete && <button onClick={_onDelete}>Delete</button>}
     </div>
   );
 }

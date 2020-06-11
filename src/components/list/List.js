@@ -1,7 +1,7 @@
 import React from "react";
 import ListItem from "./listItem";
 
-export default function List({ data, onChange }) {
+export default function List({ data, onChange, onDelete }) {
   return data.length ? (
     <div className="box">
       {data.map(({ title, isDone }, index) => {
@@ -9,6 +9,7 @@ export default function List({ data, onChange }) {
           <ListItem
             isDone={isDone}
             onChange={onChange}
+            onDelete={onDelete}
             key={index}
             index={index}
           >
