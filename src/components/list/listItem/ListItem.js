@@ -16,9 +16,11 @@ export default function ListItem({
     },
     [index, onChange]
   );
+
   const _onDelete = useCallback(() => {
     onDelete({ index });
   }, [index, onDelete]);
+
   return (
     <div className={blockName}>
       {children}{" "}
@@ -29,3 +31,20 @@ export default function ListItem({
     </div>
   );
 }
+
+// container/ functional components/ class component
+// hooks vs class screen should be more intutive
+// how to implement life cycle events
+// remove sample for practice link
+
+
+// discuss it with Balram 
+
+// 1st session
+// basic 
+// 2nd session
+// custom hooks
+// use Reducer
+// discuss pros and cons of useReducer like easy to testing and everything
+// how to maintain whole state
+// problem statement of custom hook from rippling code base
